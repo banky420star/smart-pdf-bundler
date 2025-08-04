@@ -1,0 +1,95 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Main gradient -->
+    <linearGradient id="mainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- AI gradient -->
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- PDF gradient -->
+    <linearGradient id="pdfGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#dc2626;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="url(#mainGradient)" stroke="url(#aiGradient)" stroke-width="2"/>
+  
+  <!-- Document stack -->
+  <g>
+    <!-- Back document -->
+    <rect x="30" y="35" width="50" height="70" rx="4" fill="white" opacity="0.7" transform="rotate(-2 55 70)"/>
+    
+    <!-- Middle document -->
+    <rect x="32" y="37" width="50" height="70" rx="4" fill="white" opacity="0.8" transform="rotate(-1 57 72)"/>
+    
+    <!-- Front document -->
+    <rect x="34" y="39" width="50" height="70" rx="4" fill="white" opacity="1"/>
+  </g>
+  
+  <!-- PDF icon -->
+  <g transform="translate(45, 50)">
+    <rect x="0" y="0" width="30" height="40" rx="3" fill="url(#pdfGradient)"/>
+    
+    <!-- Text lines -->
+    <rect x="5" y="8" width="20" height="2" rx="1" fill="white" opacity="0.9"/>
+    <rect x="5" y="12" width="15" height="2" rx="1" fill="white" opacity="0.7"/>
+    <rect x="5" y="16" width="18" height="2" rx="1" fill="white" opacity="0.8"/>
+    <rect x="5" y="20" width="12" height="2" rx="1" fill="white" opacity="0.6"/>
+    <rect x="5" y="24" width="16" height="2" rx="1" fill="white" opacity="0.7"/>
+    <rect x="5" y="28" width="14" height="2" rx="1" fill="white" opacity="0.8"/>
+    
+    <!-- PDF label -->
+    <text x="15" y="38" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">PDF</text>
+  </g>
+  
+  <!-- AI Sparkles -->
+  <g>
+    <!-- Top sparkle -->
+    <g transform="translate(80, 30)">
+      <path d="M0 -4L1 -2L4 -2L2 0L4 2L1 2L0 4L-1 2L-4 2L-2 0L-4 -2L-1 -2Z" fill="url(#aiGradient)"/>
+    </g>
+    
+    <!-- Right sparkle -->
+    <g transform="translate(95, 50)">
+      <path d="M0 -3L0.75 -1.5L3 -1.5L1.5 0L3 1.5L0.75 1.5L0 3L-0.75 1.5L-3 1.5L-1.5 0L-3 -1.5L-0.75 -1.5Z" fill="url(#aiGradient)"/>
+    </g>
+    
+    <!-- Bottom sparkle -->
+    <g transform="translate(80, 95)">
+      <path d="M0 -3L0.75 -1.5L3 -1.5L1.5 0L3 1.5L0.75 1.5L0 3L-0.75 1.5L-3 1.5L-1.5 0L-3 -1.5L-0.75 -1.5Z" fill="url(#aiGradient)"/>
+    </g>
+    
+    <!-- Left sparkle -->
+    <g transform="translate(35, 50)">
+      <path d="M0 -3L0.75 -1.5L3 -1.5L1.5 0L3 1.5L0.75 1.5L0 3L-0.75 1.5L-3 1.5L-1.5 0L-3 -1.5L-0.75 -1.5Z" fill="url(#aiGradient)"/>
+    </g>
+  </g>
+  
+  <!-- AI Brain in center -->
+  <g transform="translate(64, 64)">
+    <!-- Brain outline -->
+    <path d="M-8 -6C-8 -10 -4 -12 0 -12C4 -12 8 -10 8 -6C8 -2 4 0 0 0C-4 0 -8 -2 -8 -6Z" 
+          fill="none" stroke="url(#aiGradient)" stroke-width="1.5" opacity="0.8"/>
+    
+    <!-- Neural nodes -->
+    <circle cx="-4" cy="-8" r="1" fill="url(#aiGradient)"/>
+    <circle cx="4" cy="-8" r="1" fill="url(#aiGradient)"/>
+    <circle cx="0" cy="-4" r="1" fill="url(#aiGradient)"/>
+    <circle cx="-4" cy="0" r="1" fill="url(#aiGradient)"/>
+    <circle cx="4" cy="0" r="1" fill="url(#aiGradient)"/>
+    
+    <!-- Connections -->
+    <line x1="-4" y1="-8" x2="0" y2="-4" stroke="url(#aiGradient)" stroke-width="0.5" opacity="0.6"/>
+    <line x1="4" y1="-8" x2="0" y2="-4" stroke="url(#aiGradient)" stroke-width="0.5" opacity="0.6"/>
+    <line x1="0" y1="-4" x2="-4" y2="0" stroke="url(#aiGradient)" stroke-width="0.5" opacity="0.6"/>
+    <line x1="0" y1="-4" x2="4" y2="0" stroke="url(#aiGradient)" stroke-width="0.5" opacity="0.6"/>
+  </g>
+</svg> 
